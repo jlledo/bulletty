@@ -18,10 +18,9 @@ color-eyre = "0.6.5"
 dirs = "6"
 toml = "0.9.11"
 serde = { version = "1.0.228", features = [ "derive" ] }
-reqwest = { version = "0.13.2", features = [ "blocking" ] }
+reqwest = { version = "0.13.2", features = [ "blocking", "rustls" ], default-features = false }
 clap = { version = "4.5.57", features = [ "derive" ] }
 roxmltree = "0.21.1"
-openssl = { version = "0.10", features = [ "vendored" ] }
 slug = "0.1"
 html2md-bulletty = { version = "0.2.15" }
 regex = "1.12.3"
